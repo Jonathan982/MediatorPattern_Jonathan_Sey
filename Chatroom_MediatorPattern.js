@@ -3,6 +3,14 @@
 /*
    RABEARIVELO Jonathan Mattheus ISAIA 5 N°1
    ABDALAH Sey Mine Shayhane N°
+   
+   Explication : Ilay Mediator Pattern zany karazana classe intermediaire entre ny samy objet, mba hanamora sy anamaivana ny complexité sy ny controle
+   an communication sy interraction an ilay objets be dia be. io class io no mi controle sy migere ny interraction an' ireo objet. Tsy mifandray direct 
+   izany ny objet fa mila mandalo amin'ilay classe io dia izy no migerer ny routing an'reo amzay.
+   
+   Exemple : Resaka chatroom izay misy membre maromaro.
+             Rehefa mandefa message ny olona iray dia tsy direct any amin'ilay destinataire fa mila mandalo an'ilay classe"Mediator"(eto izy chatroom) 
+             ny message zay vao makany am destinataire.
 */
 
 
@@ -34,7 +42,7 @@ Chatroom.prototype = {
     this.members[member.name] = member
     member.chatroom = this
   },
-  send: function(message, fromMember, toMember)
+  send: function(message, fromMember, toMember) // ity ilay fonction, mi transferer an'ilay message avy any am mpanoratra makany am destinataire(routing)
   {
     toMember.receive(message, fromMember)
   }
@@ -42,15 +50,16 @@ Chatroom.prototype = {
 
 const chat = new Chatroom()
 
-const bob = new Member("Bob")
-const john = new Member("John")
-const tim = new Member("Tim")
+const bob = new Member("Jonathan")
+const john = new Member("Seymine")
+const tim = new Member("Ramose")
 
-chat.addMember(bob)
-chat.addMember(john)
-chat.addMember(tim)
+chat.addMember(jonathan)
+chat.addMember(seymine)
+chat.addMember(ramose)
 
-bob.send("Hey, John", john)
-john.send("What's up, Bob", bob)
-tim.send("John, are you ok?", john)
+jonathan.send("On a combien comme note Seymine", seymine)
+seymine.send("Demande à Monsieur", jonathan)
+jonathan.send("On a combien comme note Monsieur?", ramose)
+ramose.send("Vous avez eu 20/20! haha", jonathan)
 
