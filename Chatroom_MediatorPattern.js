@@ -1,21 +1,21 @@
 
   
 /*
-    Mediator Design Pattern -> https://youtu.be/ZuhgOu-DGA4
-    Author: DevSage (Youtube) -> https://www.youtube.com/DevSage
+   RABEARIVELO Jonathan Mattheus ISAIA 5 N°1
+   ABDALAH Sey Mine Shayhane N°
 */
 
 
 function Member(name)
 {
   this.name = name
-  this.chatroom = null
+  this.chatroom = null 
 }
 
 Member.prototype = {
-  send: function(message, toMember)
+  send: function(message, toMember)// fonction rehefa handefa message
   {
-    this.chatroom.send(message, this, toMember)
+    this.chatroom.send(message, this, toMember) // Tsy direct any @ ilay destinataire izy no mandeha fa mbola mandalo an'ilay mediator(chatroom)
   },
   receive: function(message, fromMember)
   {
