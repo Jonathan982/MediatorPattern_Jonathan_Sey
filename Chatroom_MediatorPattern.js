@@ -1,32 +1,4 @@
-Skip to content
-Search or jump to…
 
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Jonathan982 
-pkellz
-/
-devsage
-3
-5341
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-devsage/DesignPatterns/Mediator.js /
-@pkellz
-pkellz Mediator
-Latest commit dd81e04 on 18 Nov 2019
- History
- 1 contributor
-53 lines (44 sloc)  989 Bytes
   
 /*
     Mediator Design Pattern -> https://youtu.be/ZuhgOu-DGA4
@@ -81,15 +53,4 @@ chat.addMember(tim)
 bob.send("Hey, John", john)
 john.send("What's up, Bob", bob)
 tim.send("John, are you ok?", john)
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+
