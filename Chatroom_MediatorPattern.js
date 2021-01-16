@@ -50,9 +50,9 @@ Chatroom.prototype = {
 
 const chat = new Chatroom()
 
-const bob = new Member("Jonathan")
-const john = new Member("Seymine")
-const tim = new Member("Ramose")
+const jonathan = new Member("Jonathan")
+const seymine = new Member("Seymine")
+const ramose = new Member("Ramose")
 
 chat.addMember(jonathan)
 chat.addMember(seymine)
